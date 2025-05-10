@@ -36,6 +36,7 @@ bash
 Copy
 Edit
 pip install -r requirements.txt
+
 Note: If requirements.txt is not present, install manually:
 
 bash
@@ -43,7 +44,7 @@ Copy
 Edit
 pip install streamlit pandas scikit-learn joblib
 4. Add the Model File
-Ensure the trained model file sales_multi_model.pkl is placed in the root directory of the project. This file is essential for making predictions.
+Ensure the trained model file [ sales_multi_model.pkl ] is placed in the root directory of the project. This file is essential for making predictions.
 
 🚀 How to Run the App
 Launch the Streamlit web application with the following command:
