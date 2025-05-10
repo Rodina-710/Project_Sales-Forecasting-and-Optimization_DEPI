@@ -1,0 +1,11 @@
+pandas 
+numpy
+matplotlip 
+seaborn 
+joblip
+mlflow
+sklearn
+pickle
+scipy.stats
+RandomizedSearchCV
+RandomForestRegressor 
