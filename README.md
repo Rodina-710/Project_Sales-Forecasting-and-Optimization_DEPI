@@ -1,40 +1,111 @@
 # Project_Sales-Forecasting-and-Optimization_Team4
-🛍️ Project Overview: Sales Forecasting and Optimization
-This project focuses on predicting retail product sales and optimizing inventory management using machine learning. It includes a user-friendly web application built with Streamlit, allowing users to input various farm and product details to forecast:
+📈 Sales Forecasting and Optimization
+Overview
+Sales Forecasting and Optimization is a data-driven application designed to assist agricultural retailers and farm managers in making informed business decisions by forecasting product sales and estimating revenue. Leveraging machine learning techniques, the project enables users to enter key product and farm information and receive predictive insights instantly via an interactive web interface.
 
-Quantity of products sold (in liters or kilograms)
+The application is particularly useful for retail operations involving dairy and similar products where accurate demand forecasting and inventory control are essential.
 
-Approximate total revenue (in INR)
+🔧 Features
+🌾 Input-Based Prediction: Predicts sales quantity and expected revenue based on customizable inputs like land size, number of cows, farm size, product ID, and pricing.
 
-🔍 What the Project Does
-The application uses a trained machine learning model to make accurate predictions based on inputs like:
+🧠 Machine Learning Model: Uses a trained regression model to generate real-time predictions.
 
-Total land area and number of cows
+📊 Interactive Web Interface: Built with Streamlit for a clean, responsive user experience.
 
-Farm size category (Small, Medium, Large)
+⚙️ Inventory Optimization: Helps determine stock requirements and reorder levels.
 
-Product information such as ID, price, and stock levels
+💼 Business Intelligence Tool: Ideal for small to medium-scale retailers and farm owners seeking actionable insights.
 
-These predictions help farmers and retail managers:
+🛠️ Installation Guide
+Follow the steps below to set up and run the application locally:
 
-Make better inventory decisions
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/sales-forecasting-optimization.git
+cd sales-forecasting-optimization
+2. Set Up a Virtual Environment (Recommended)
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+3. Install Required Packages
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Note: If requirements.txt is not present, install manually:
 
-Avoid under- or over-stocking
+bash
+Copy
+Edit
+pip install streamlit pandas scikit-learn joblib
+4. Add the Model File
+Ensure the trained model file sales_multi_model.pkl is placed in the root directory of the project. This file is essential for making predictions.
 
-Maximize revenue with data-driven insights
+🚀 How to Run the App
+Launch the Streamlit web application with the following command:
 
-🧠 Tech Stack
-Python
+bash
+Copy
+Edit
+streamlit run server2.py
+The app will start in your browser at http://localhost:8501.
 
-Streamlit for the interactive web app
+📘 Usage Instructions
+Start the App and wait for the interface to load.
 
-scikit-learn / joblib for machine learning model deployment
+Fill in the Product and Farm Details in the provided form:
 
-Pandas for data handling
+Total Land Area (acres)
 
-🚀 Key Features
-Intuitive form-based UI for entering farm and product data
+Number of Cows
 
-Dynamic prediction of both quantity sold and revenue
+Farm Size (Small / Medium / Large)
 
-Smart use of ML to drive inventory optimization
+Product ID (1–10)
+
+Quantity (liters/kg)
+
+Price per Unit
+
+Quantity in Stock
+
+Minimum Stock Threshold
+
+Reorder Quantity
+
+Select the Target Prediction Output:
+
+Quantity Sold
+
+Approximate Revenue (INR)
+
+Both
+
+Click Predict.
+
+View the prediction results on the screen.
+
+📂 File Structure
+bash
+Copy
+Edit
+├── server2.py               # Streamlit app script
+├── sales_multi_model.pkl    # Pretrained machine learning model (you must add this)
+├── requirements.txt         # List of dependencies
+├── Sales Forecasting and Optimization - DEPI_DRAFT.ipynb  # Notebook for model training and analysis
+📌 Requirements
+Python 3.7+
+
+Streamlit
+
+pandas
+
+scikit-learn
+
+joblib
+
+
