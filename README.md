@@ -5,6 +5,19 @@ Sales Forecasting and Optimization is a data-driven application designed to assi
 
 The application is particularly useful for retail operations involving dairy and similar products where accurate demand forecasting and inventory control are essential.
 
+📦 Model File Notice
+Important:
+The required machine learning model file sales_multi_model.pkl is included in a compressed archive named Models.zip.
+
+Please make sure to:
+
+Download the Models.zip file from the project repository.
+
+Extract the contents.
+
+Move the sales_multi_model.pkl file into the project’s root directory (same folder as server2.py).
+
+The application will not run without this model file properly placed.
 🔧 Features
 🌾 Input-Based Prediction: Predicts sales quantity and expected revenue based on customizable inputs like land size, number of cows, farm size, product ID, and pricing.
 
