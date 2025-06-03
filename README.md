@@ -66,7 +66,7 @@ bash
 Copy
 Edit
 streamlit run server2.py
-The app will start in your browser at http://localhost:8501.
+The app will start in your browser at https://projectsales-forecasting-and-optimizationdepi-mvmydjupao3fdvuk.streamlit.app/
 
 📘 Usage Instructions
 Start the App and wait for the interface to load.
